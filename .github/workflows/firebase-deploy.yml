@@ -34,7 +34,7 @@ jobs:
 
       - name: Deploy Board Hosting
         run: |
-          cd board_app
+          cd display_screen_panel
           firebase deploy --only hosting --token "$FIREBASE_TOKEN"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
@@ -71,4 +71,5 @@ jobs:
           name: rank-admin-apk
 
           path: manage_app/rank_manage/build/app/outputs/flutter-apk/app-release.apk
+
 
