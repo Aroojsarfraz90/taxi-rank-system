@@ -30,5 +30,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: rank-admin-apk
-          path: rank_manage_new/build/app/outputs/flutter-apk/app-release.apk
+          path: rank_admin/build/app/outputs/flutter-apk/app-release.apk
+
 
