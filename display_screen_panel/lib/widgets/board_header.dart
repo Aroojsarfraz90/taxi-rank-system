@@ -17,6 +17,12 @@ class BoardHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+		Image.asset(
+            'assets/logo.png', // Make sure logo is in assets folder
+            width: 240,          // Adjust proportionally (half of 329/800)
+            height: 65,
+            fit: BoxFit.contain,
+          ),
           const Text(
             "TAXI RANK DEPARTURES",
             style: TextStyle(
